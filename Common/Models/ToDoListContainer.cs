@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class ToDoListParent
+    public class ToDoListContainer
     {
         public Guid ID { get; set; }
         public string ListName { get; set; }

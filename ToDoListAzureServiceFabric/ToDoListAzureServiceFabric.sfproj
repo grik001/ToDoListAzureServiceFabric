@@ -29,10 +29,11 @@
     <None Include="Scripts\Deploy-FabricApplication.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <ProjectReference Include="..\ToDoListGateway.API\ToDoListGateway.API.csproj" />
+    <ProjectReference Include="..\ToDoListInteractionService\ToDoListInteractionService.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PushItemService\PushItemService.csproj" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
